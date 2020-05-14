@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/*@charset para usae acentuacoes do portugues*/
+
+
+body {
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+}
+
+div#interface {
+    width: 800px;
+    background-color: #ffffff;
+    margin: -25px auto 0 auto;
+    box-shadow: 0px 0px 10px grey;
+    padding: 10px;
+}
+
+p { /*estilizando o paragrafo*/
+text-align: justify; 
+text-indent: 50px;    
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 900px;
+    top: 50px;
+}
+
+/*Formatacao de imagens com legendas*/
+
+figure.foto-legenda { /*chamando a class no html pada class usa. e para id#*/
+    position: relative; /*objeto container pai*/
+    border: 8px solid white; /*tamanho e cor da borda*/
+    box-shadow: 1px 1px 4px black ; /*sombra do box*/
+}
+figure.foto-legenda img { /*organizando o tamanho da imagem para manter o tamanho da imagem certo*/
+    width: 100%;
+    height: 100%;
+} 
+
+figure.foto-legenda figcaption {
+    opacity: 0; /* opacidade da legenda e so aparecer quando o mouse passar por cima coligado com o hover*/
+    position: absolute;/*objeto container filho posicao absoluta dentro do seu container*/
+    top: 0px; /*para nao ficar no top da pagina tera que ser configurado a posicao relativa*/
+    background-color: rgba(0,0,0,.4);/*camada do box com transparencia*/
+    color: white; /*legenda branca*/
+    width: 100%; /*ocupar todo o espaco dentro da imagem*/
+    height: 100%; /*ocupar todo o espaco dentro da imagem*/
+    padding: 10px; /*espaco dentro da legenda*/
+    box-sizing: border-box;/*para o padding ficar com o tamanho certo*/
+    transition: 1s; /*tempo de tranzicao quando o mouse passar por cima*/
+}
+ figure.foto-legenda:hover figcaption {
+     opacity: 100%; /* efeito conjunto com a opacidade 0*/
+ }
+
+/* Formatacao do menu nav (Navegador)*/
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ol {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 700px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+ nav#menu h1 {
+     display: none;
+ }
+
+ nav#menu a {
+     color: #000000;
+     text-decoration: none;
+ }
+
+ nav#menu a:hover {
+     color: #ffffff;
+ }
