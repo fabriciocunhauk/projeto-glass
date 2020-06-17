@@ -7,6 +7,7 @@
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-color: #dddddd;
     color: rgba(0,0,0,1);
 }
@@ -24,10 +25,19 @@ text-align: justify;
 text-indent: 50px;    
 }
 
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 header#cabecalho img#icone {
     position: absolute;
-    left: 950px;
-    top: 50px;
+    left: 1130px;
+    top: 85px;
 }
 
 header#cabecalho {
@@ -37,11 +47,12 @@ header#cabecalho {
 }
 
 header#cabecalho h1 {
-    font-family: FonteLogo, sans-serif;
+    font-family: 'FonteLogo', sans-serif;
     font-size: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0,0,0,.6);
     padding: 0px;
+    margin-bottom: 0px;
 }
 
 header#cabecalho h2 {
@@ -94,7 +105,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 500px;
+    left: 650px;
 }
 
 nav#menu li {
@@ -123,12 +134,45 @@ nav#menu li:hover {
  }
 
 section#corpo {
-    margin-top: 18px;
+    margin-top: 15px;
     display: block;
-    width: 520px;
+    width: 500px;
     float: left;
     border-right: 1px solid #606060;
     padding-right: 15px;
+}
+
+article#noticia-principal h2 {
+font-size: 12pt;
+color: #606060;
+background-color: #dddddd;
+padding: 5px 0px 5px 10px;
+margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-do-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.direita {
+    text-align: right;
+}
+
+header#cabecalho-do-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+
+}
+
+header#cabecalho-do-artigo h3 {
+    font-size: 12px;
+    color: #606060;
 }
 
 #tabela-spec {
@@ -156,7 +200,7 @@ table#tabela-spec td.coluna-da-esquerda {
 
 table#tabela-spec caption {
 color: #888888;
-font-size: 15px;
+font-size: 15pt;
 font-weight: bold;
 }
 
@@ -172,6 +216,23 @@ aside#lateral {
     display: block;
     width: 350px;
     float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 13pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+background-color: #606060;
+font-size: 13pt;
+color: white;
 }
 
 footer#rodape {
