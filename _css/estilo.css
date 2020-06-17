@@ -123,11 +123,25 @@ nav#menu li:hover {
  }
 
 section#corpo {
+    margin-top: 18px;
     display: block;
     width: 520px;
     float: left;
     border-right: 1px solid #606060;
     padding-right: 15px;
+}
+
+#tabela-spec {
+    border: 1px solid #606060 ;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabela-spec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
 }
 
 aside#lateral {
