@@ -57,7 +57,7 @@
                         <h3 class="direita">Atualizado em 23/Abril/2013</h3>
                     </hgroup>
                 </header>
-                <form>
+                <form method="post" id="fContato" action="mailto: e-mail...">
                     <fieldset> Identificação do Usuário
                         <p><label for="Cnome">Nome:</label><input type="text" name="Tnome" id="Cnome" size="20"
                                 maxlength="30" placeholder="Nome Completo"></p>
@@ -75,26 +75,65 @@
 
                     <fieldset id="endereco">
                         <legend>Endereço do Usuário</legend>
+
                         <p><label for="Crua">Logradouro:</label><input type="text" name="Trua" id="Crua" size="13"
                                 maxlength="80" placeholder="Rua, Av, Trav,"></p>
+
                         <p><label for="Cnum">Número:</label> <input type="number" name="Tnum" id="Cnum" min="0"
                                 max="999999"></p>
-                        Estado:
-                        Cidade:
+
+                        <p><label for="Cest">Estado:</label>
+                            <select name="Test" id="Cest">
+                                <optgroup label="Regiao Sul">
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">Sao Paulo</option>
+                                    <option value="PR">Parana</option>
+                                </optgroup>
+
+                                <optgroup label="Regiao Centroeste">
+                                    <option value="GO" selected>Goias</option>
+                                    <option value="DF">Brasilia</option>
+                                </optgroup>
+                            </select>
+                        </p>
+
+                        <p><label for="Ccid">Cidade:</label>
+                            <input type="text" name="Tcid" id="Ccid" maxlength="40" size="20" placeholder="Sua Cidade"
+                                list="cidades">
+                        </p>
+                        <datalist id="cidades">
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Nova Iguacu"></option>
+                            <option value="Niteroi"></option>
+                        </datalist>
                     </fieldset>
 
                     <fieldset>
-                        Mensagem do Usuário
-                        Grau de Urgência:
-                        Mensagem:
+                        <legend>Mensagem do Usuário</legend>
+
+                        <p><label for="Curg">Grau de Urgência:</label>
+                            Min<input type="range" name="Turg" id="Curg" min="0" max="10" step="2">Max
+                        </p>
+
+                        <p><label for="Cmsg">Mensagem:</label>
+                            <textarea name="Tmsg" id="Cmsg" cols="45" rows="5"></textarea>
+                        </p>
+
                     </fieldset>
 
                     <fieldset>
-                        Quero um Google Glass
-                        Gostaria de adquirir um Google Glass quando disponível
-                        Cor:
-                        Quantidade:
-                        Preço Total: R$
+                        <legend>Quero um Google Glass</legend>
+
+                        <p><label for="">Gostaria de adquirir um Google Glass quando disponível</label></p>
+
+                        <p><label for="">Cor:</label></p>
+
+                        <p><label for="">Quantidade:</label></p>
+
+                        <p><label for="">Preço Total: R$</label></p>
+
+
+
                     </fieldset>
 
 
