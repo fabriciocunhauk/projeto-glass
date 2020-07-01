@@ -6,7 +6,13 @@
     <title>Tudo sobre Google glass</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
     <link rel="stylesheet" type="text/css" href="_css/form.css" />
-    <!--link com o arquivo css separado-->
+    <script>
+        function calc_total() {
+            var qtd = parseInt(document.getElementById("Cqtd").value);
+            tot = qtd * 1500;
+            document.getElementById("Ctot").value = tot;
+        }
+    </script>
 </head>
 
 <body>
@@ -23,7 +29,7 @@
 
             <hr class="hr">
 
-            <img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+            <img id="icone" src="_imagens/contato.png">
             <!--pegar a imagem da pasta _imagens-->
 
             <nav id="menu">
@@ -57,8 +63,8 @@
                         <h3 class="direita">Atualizado em 23/Abril/2013</h3>
                     </hgroup>
                 </header>
-                <form method="post" id="fContato" action="mailto: e-mail...">
-                    <fieldset> Identificação do Usuário
+                <form method="post" id="fContato" action="mailto: e-mail..." oninput="calc_total();">
+                    <fieldset id="usuario"> Identificação do Usuário
                         <p><label for="Cnome">Nome:</label><input type="text" name="Tnome" id="Cnome" size="20"
                                 maxlength="30" placeholder="Nome Completo"></p>
                         <p><label for="Csenha">Senha:</label><input type="password" name="Tsenha" id="Csenha" size="8"
@@ -108,7 +114,7 @@
                         </datalist>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset id="mensagem">
                         <legend>Mensagem do Usuário</legend>
 
                         <p><label for="Curg">Grau de Urgência:</label>
@@ -121,23 +127,27 @@
 
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset id="pedido">
                         <legend>Quero um Google Glass</legend>
 
-                        <p><label for="">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                        <p><input type="checkbox" name="Tped" id="Cped" checked><label for="Cped"> Gostaria de adquirir
+                                um
+                                Google
+                                Glass quando disponível</label></p>
 
-                        <p><label for="">Cor:</label></p>
+                        <p><input type="color" name="Tcor" id="Ccor" value="#0000FF"><label for="Ccor"> Cor:</label></p>
 
-                        <p><label for="">Quantidade:</label></p>
+                        <p><label for="Cqtd">Quantidade:</label><input type="number" name="Tqtd" id="Cqtd"></p>
 
-                        <p><label for="">Preço Total: R$</label></p>
+                        <p><label for="Ctot">Preço Total: R$ </label><input type="text" name="Ttot" id="Ctot"
+                                placeholder="Total a pagar" readonly></p>
 
 
 
                     </fieldset>
 
 
-                    [BOTÃO ENVIAR]
+                    <input type="image" name="Tenviar" src="./_imagens/botao-enviar.png">
                 </form>
             </article>
         </section>

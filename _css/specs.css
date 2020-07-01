@@ -15,3 +15,7 @@ iframe#frame-spec {
 iframe#frame-spec::-webkit-scrollbar {
     display: none;
 }
+
+header#cabecalho-do-artigo {
+    margin-top: 20px;
+}
