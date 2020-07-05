@@ -16,4 +16,4 @@ Um mês antes, o Google vendeu os óculos por 24 horas. O número de aparelhos f
 
 E em 19 de janeiro de 2016 chega ao fim o 'Glass Explorer Program', consequentemente suspendendo por tempo indeterminado as vendas do atual modelo do dispositivo.[3]
 
-# Arquivo para aprendizado em HTML5 com base no Curso de HTML5 do Cursos em Vídeo com o professor Guanabara.
+### Arquivo para aprendizado em HTML5 com base no Curso de HTML5 do Cursos em Vídeo com o professor Guanabara.
