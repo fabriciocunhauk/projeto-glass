@@ -2,18 +2,18 @@
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSF7RhxH4VlfuWUby0UQbuvr23ieQWW2wVjjw&usqp=CAU) ![](https://repository-images.githubusercontent.com/248870497/40e30100-7aa6-11ea-9252-0a5de5bbcae4)
 
-# Descrição
+# Description
 
-O Google Glass é um dispositivo semelhante a um par de óculos, que fixados em um dos olhos, disponibiliza uma pequena tela acima do campo de visão. A pequena tela apresenta ao seu utilizador mapas, opções de música, previsão do tempo, rotas de mapas, e além disso, também é possível efetuar chamadas de vídeo ou tirar fotos de algo que se esteja a ver e compartilhar imediatamente através da internet.
+Google Glass is a device similar to a pair of glasses, which fixed on one eye, provides a small screen above the field of view. The small screen presents its user with maps, music options, weather forecast, map routes, and in addition, it is also possible to make video calls or take pictures of something that is being seen and shared immediately over the internet.
 
-O Projeto vinha sendo mantido pelos escritórios do Google X pelo menos desde 2006 e, até o dia 4 de abril de 2012, o Google Glass ainda era um projeto secreto da Google. Atualmente, o Google X conta com o apoio de especialistas em alta tecnologia como Richard W. DeVaul e Babak Parviz. O visual do Google Glass parece sofisticado e futurista mas não possui lentes dos dois lados. Sabe-se que o Google tem fornecido os protótipos ao seus colaboradores a fim de poder lançar o produto ainda neste ano (2014)
+The Project had been maintained by Google X offices since at least 2006, and until April 4, 2012, Google Glass was still a secret Google project. Currently, Google X is supported by high-tech experts like Richard W. DeVaul and Babak Parviz. The look of Google Glass looks sophisticated and futuristic but has no lenses on both sides. It is known that Google has provided the prototypes to its employees in order to be able to launch the product later this year (2014)
 
-A lente de projeção do Google Glass não ocupa todo o campo de visão do utilizador e possui uma tecnologia de foco que permite ao observador ler o seu conteúdo sem a necessidade de mudar seu foco de visão. Todos esses cuidados garantem o conforto e a segurança da pessoa que utilizar a tecnologia.
+The Google Glass projection lens does not occupy the entire field of view of the user and has a focus technology that allows the viewer to read its content without the need to change their focus of view. All these precautions guarantee the comfort and safety of the person using the technology.
 
-Desde o dia 13 de maio (de 2014), o Google Glass é vendido para o público em geral, mas somente para quem mora nos Estados Unidos. O dispositivo custa US$ 1,5 mil e a comercialização faz parte do Glass Explorer Program, que ainda está na versão beta. O Google Glass estava disponível apenas para desenvolvedores ou pessoas que tivessem um projeto com o aparelho. [1]
+Since May 13 (2014), Google Glass has been sold to the general public, but only to those who live in the United States. The device costs $ 1,500 and the sale is part of the Glass Explorer Program, which is still in beta. Google Glass was only available to developers or people who had a project with the device. [1]
 
-Um mês antes, o Google vendeu os óculos por 24 horas. O número de aparelhos foi limitado e ainda era preciso responder um formulário para participar do Glass Explorer Program. Em 20 horas todo estoque do Google Glass foi comercializado.[2]
+A month earlier, Google sold the glasses for 24 hours. The number of devices was limited and it was still necessary to answer a form to participate in the Glass Explorer Program. Within 20 hours all Google Glass stock was sold. [2]
 
-E em 19 de janeiro de 2016 chega ao fim o 'Glass Explorer Program', consequentemente suspendendo por tempo indeterminado as vendas do atual modelo do dispositivo.[3]
+And on January 19, 2016, the 'Glass Explorer Program' comes to an end, consequently suspending sales of the current model of the device indefinitely. [3]
 
-### Arquivo para aprendizado em HTML5 com base no Curso de HTML5 do Cursos em Vídeo com o professor Guanabara.
+### File for HTML5 learning based on the HTML5 Course of Video Courses with Professor Guanabara.
