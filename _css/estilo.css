@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*@charset para usae acentuacoes do portugues*/
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
 @font-face {
     font-family: 'FonteLogo';
     src: url("../_fonts/bubblegum-sans-regular.otf");
@@ -9,7 +10,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #dddddd;
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
 }
 
 div#interface {
@@ -20,9 +21,10 @@ div#interface {
     padding: 10px;
 }
 
-p { /*estilizando o paragrafo*/
-text-align: justify; 
-text-indent: 50px;    
+p {
+    /*estilizando o paragrafo*/
+    text-align: justify;
+    text-indent: 50px;
 }
 
 a {
@@ -36,8 +38,15 @@ a:hover {
 
 header#cabecalho img#icone {
     position: absolute;
-    left: 1130px;
-    top: 85px;
+    left: 1150px;
+    top: 65px;
+}
+
+@media (max-width: 1400px) {
+    header#cabecalho img#icone {
+        left: 900px;
+        top: 70px;
+    }
 }
 
 header#cabecalho {
@@ -50,7 +59,7 @@ header#cabecalho h1 {
     font-family: 'FonteLogo', sans-serif;
     font-size: 30pt;
     color: #606060;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
     padding: 0px;
     margin-bottom: 0px;
 }
@@ -68,31 +77,49 @@ header#cabecalho h2 {
 
 /*Formatacao de imagens com legendas*/
 
-figure.foto-legenda { /*chamando a class no html pada class usa. e para id#*/
-    position: relative; /*objeto container pai*/
-    border: 8px solid white; /*tamanho e cor da borda*/
-    box-shadow: 1px 1px 4px black ; /*sombra do box*/
+figure.foto-legenda {
+    /*chamando a class no html pada class usa. e para id#*/
+    position: relative;
+    /*objeto container pai*/
+    border: 8px solid white;
+    /*tamanho e cor da borda*/
+    box-shadow: 1px 1px 4px black;
+    /*sombra do box*/
 }
-figure.foto-legenda img { /*organizando o tamanho da imagem para manter o tamanho da imagem certo*/
+
+figure.foto-legenda img {
+    /*organizando o tamanho da imagem para manter o tamanho da imagem certo*/
     width: 100%;
     height: 100%;
-} 
+}
 
 figure.foto-legenda figcaption {
-    opacity: 0; /* opacidade da legenda e so aparecer quando o mouse passar por cima coligado com o hover*/
-    position: absolute;/*objeto container filho posicao absoluta dentro do seu container*/
-    top: 0px; /*para nao ficar no top da pagina tera que ser configurado a posicao relativa*/
-    background-color: rgba(0,0,0,.4);/*camada do box com transparencia*/
-    color: white; /*legenda branca*/
-    width: 100%; /*ocupar todo o espaco dentro da imagem*/
-    height: 100%; /*ocupar todo o espaco dentro da imagem*/
-    padding: 10px; /*espaco dentro da legenda*/
-    box-sizing: border-box;/*para o padding ficar com o tamanho certo*/
-    transition: 1s; /*tempo de tranzicao quando o mouse passar por cima*/
+    opacity: 0;
+    /* opacidade da legenda e so aparecer quando o mouse passar por cima coligado com o hover*/
+    position: absolute;
+    /*objeto container filho posicao absoluta dentro do seu container*/
+    top: 0px;
+    /*para nao ficar no top da pagina tera que ser configurado a posicao relativa*/
+    background-color: rgba(0, 0, 0, .4);
+    /*camada do box com transparencia*/
+    color: white;
+    /*legenda branca*/
+    width: 100%;
+    /*ocupar todo o espaco dentro da imagem*/
+    height: 100%;
+    /*ocupar todo o espaco dentro da imagem*/
+    padding: 10px;
+    /*espaco dentro da legenda*/
+    box-sizing: border-box;
+    /*para o padding ficar com o tamanho certo*/
+    transition: 1s;
+    /*tempo de tranzicao quando o mouse passar por cima*/
 }
- figure.foto-legenda:hover figcaption {
-     opacity: 100%; /* efeito conjunto com a opacidade 0*/
- }
+
+figure.foto-legenda:hover figcaption {
+    opacity: 100%;
+    /* efeito conjunto com a opacidade 0*/
+}
 
 /* Formatacao do menu nav (Navegador)*/
 
@@ -105,7 +132,19 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 650px;
+    left: 750px;
+}
+
+@media (max-width: 1400px) {
+    nav#menu ul {
+        margin-left: -300px;
+    }
+}
+
+@media (max-width: 700px) {
+    nav#menu ul {
+        margin-left: -300px;
+    }
 }
 
 nav#menu li {
@@ -120,18 +159,18 @@ nav#menu li:hover {
     background-color: #606060;
 }
 
- nav#menu h1 {
-     display: none;
- }
+nav#menu h1 {
+    display: none;
+}
 
- nav#menu a {
-     color: #000000;
-     text-decoration: none;
- }
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+}
 
- nav#menu a:hover {
-     color: #ffffff;
- }
+nav#menu a:hover {
+    color: #ffffff;
+}
 
 section#corpo {
     margin-top: 15px;
@@ -143,11 +182,11 @@ section#corpo {
 }
 
 article#noticia-principal h2 {
-font-size: 12pt;
-color: #606060;
-background-color: #dddddd;
-padding: 5px 0px 5px 10px;
-margin: 10px 0px 10px 0px;
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
 }
 
 header#cabecalho-do-artigo h1 {
@@ -176,7 +215,7 @@ header#cabecalho-do-artigo h3 {
 }
 
 #tabela-spec {
-    border: 1px solid #606060 ;
+    border: 1px solid #606060;
     border-spacing: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -189,7 +228,7 @@ table#tabela-spec td {
 }
 
 table#tabela-spec td.coluna-da-direita {
-background-color: #cecece;
+    background-color: #cecece;
 }
 
 table#tabela-spec td.coluna-da-esquerda {
@@ -199,9 +238,9 @@ table#tabela-spec td.coluna-da-esquerda {
 }
 
 table#tabela-spec caption {
-color: #888888;
-font-size: 15pt;
-font-weight: bold;
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bold;
 }
 
 table#tabela-spec caption span {
@@ -219,7 +258,7 @@ aside#lateral {
     background-color: #dddddd;
     padding: 10px;
     margin-top: 30px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
 aside#lateral h1 {
@@ -230,9 +269,9 @@ aside#lateral h1 {
 }
 
 aside#lateral h2 {
-background-color: #606060;
-font-size: 13pt;
-color: white;
+    background-color: #606060;
+    font-size: 13pt;
+    color: white;
 }
 
 video#filme-aside {
